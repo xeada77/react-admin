@@ -1,25 +1,26 @@
 @import "../../styles/variables.scss";
 
-.menu{
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .title {
+    font-size: 12px;
+    font-weight: 200;
+    color: $soft-color;
+    text-transform: uppercase;
+  }
+
+  .listItem {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
 
-    .title{
-        font-size: 12px;
-        font-weight: 200;
-        color: $soft-color;
+    &:hover {
+      background-color: $soft-color;
     }
-
-    .listItem{
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding: 10px;
-        border-radius: 5px;
-
-        &:hover {
-            background-color: $soft-color;
-        }
-    }
+  }
 }
